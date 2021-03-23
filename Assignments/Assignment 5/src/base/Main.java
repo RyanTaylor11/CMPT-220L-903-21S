@@ -1,5 +1,7 @@
 package base;
 
+import java.util.Scanner;
+
 public class Main {
     /**
      * In our Assignment here we're running a little lemonade stand and we also sell pretzels. We need to keep track of
@@ -32,9 +34,41 @@ public class Main {
         wet_inventory();
     }
 
-    static void dry_inventory() {
-        // Your DRY Solution goes here!
-    }
+        static void dry_inventory() {
+            // Your DRY Solution goes here!
+
+            for (int i=0; i<15; i++) {
+                Scanner myObj = new Scanner(System.in);
+
+                System.out.println("Enter how many pretzles, leomonade and if you want to give a tip:");
+
+                int pret = myObj.nextInt();
+                int total1 = pret * 2;
+                cash = cash + total1;
+                pretzels_available = pretzels_available - pret;
+                // String input
+                int leo = myObj.nextInt();
+                int total = leo * 8;
+                cash =cash + total;
+                lemonades_available= lemonades_available - leo;
+
+                // Numerical input
+
+
+                int extra = myObj.nextInt();
+                tips = tips + extra;
+
+
+
+            }
+            System.out.println("Results for the hour!");
+            System.out.println("Lemonades Inventory: " + lemonades_available);
+            System.out.println("Pretzels Inventory: " + pretzels_available);
+            System.out.println("Cash: " + cash);
+            System.out.println("Tips: " + tips);
+        }
+
+
 
     static void wet_inventory() {
         /**
