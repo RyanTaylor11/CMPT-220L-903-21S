@@ -1,0 +1,19 @@
+Welcome to the final project of Software Development 1
+This project does all of the following: allows the creation of a search tree, allows the additon of nodes,
+allows you to find weather or not an element exist, finds the high of the tree, finds largest and smallest interger,
+find the nth largest element, Delete and reorganizes i post, in, and preorder
+has a Depth First Search option
+HOW TO USE:
+The binary tree is already created as end (to symbolize the end of the year).  If you want to change that it is in the Main method
+To add elements do end.add(); this will add a value to the binary search tree.
+To see if a node exists inside of the Search tree use the end.find() command in order to check the program for a number
+To find the height of the tree use the end.height(root) command
+To find the min value of the tree use the end.minvalue(root) command
+To find the max value it quite similar use the end.maxvalue(root) command
+To find the nth largest value use the nthlargest(root,(n number)
+To delete a node use the following command end.deleteNode(end.root,(Number))
+To show the search tree in an inorder format use the end.inordertraversal(end.root) command
+To show the search tree in an preorder format use the end.Preorder(); command
+To show the search tree in an postorder format use the end.Postorder(); command
+To search the tree via a breath format use the end.Breathsetup();
+To search the tree via a Depth first search use end.Depth;
